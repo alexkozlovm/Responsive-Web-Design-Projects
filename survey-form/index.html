@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Coding Survey</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">Coding Survey</h1>
+        <p id="description">A short coding survey to let us know about you</p>
+        <form id="survey-form">
+            <fieldset>
+            <label id="name-label">Name <br>
+            <input  required placeholder="Enter your name" id="name" type="text"></input></label>
+            <label id="email-label">Email<br>
+            <input required placeholder="Enter your email" id="email" type="email"></input></label>
+            <label id="number-label">Age<br>
+            <input placeholder="Enter your age (optional)" id="number" type="number" min="12" max="120"></input></label>
+        </fieldset>
+        <fieldset>
+            <label>How did you get your education</label>
+            <select required id="dropdown">
+                <option value="0">(Select an option)</option>
+                <option value="1">Univeristy or College</option>
+                <option value="2">Bootcamp</option>
+                <option value="3">Self Educated</option>
+                <option value="4">Still Learning</option>
+                <option value="5">Other</option>
+            </select>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>Do you have a Job</legend>
+               <label> <input class="inline" checked name="job" value="job" type="radio"></input>No</label>
+               <label><input class="inline" name="job" value="job" type="radio">Yes, a coding realated job</input></label>
+                <label><input  class="inline"name="job" value="job" type="radio">Yes, a non-coding realated job</input></label>
+        </fieldset>
+        <fieldset>
+            <legend>What Coding languages do you know</legend>
+                <label><input class="inline" value="SQL" type="checkbox">SQL</input>                   </label>
+                <label><input value="Python" class="inline" type="checkbox">Python</input>             </label>
+                <label><input class="inline" value="Java" type="checkbox">Java</input></label>
+                <label><input class="inline" value="Javascript" type="checkbox">Javascript</in</label>put>
+                <label><input class="inline" value="C#" type="checkbox">C#</input></label>
+                <label><input class="inline" value="R" type="checkbox">R</input></label>
+                <label><input class="inline" value="C/C++" type="checkbox">C</input></label>
+                <label><input class="inline" value="Go" type="checkbox">Go</input></label>
+                <label><input class="inline" value="Perl" type="checkbox">Perl</input></label>
+                <label><input class="inline" value="Swift" type="checkbox">Swift</input></label>
+                <label><input  class="inline"value="HTML + CSS" type="checkbox">HTML + CSS</input></label>
+                <label><input  class="inline"value="Bash" type="checkbox">Bash</input></label>
+                <label><input  class="inline"value="Ruby" type="checkbox">Ruby</input></label>
+                <label><input  class="inline"value="Kotlin" type="checkbox">Kotlin</input></label>
+                <label><input  class="inline"value="NoSQL" type="checkbox">NoSQL</input></label>
+                <label><input  class="inline"value="Matlab" type="checkbox">Matlab</input></label>
+                <label><input  class="inline"value="Typescript" type="checkbox">Typescript</input></label>
+                <label><input class="inline"value="Scala" type="checkbox">Scala</input></label>
+                <label><input  class="inline"value="Rust" type="checkbox">Rust</input></label>
+                <label><input  class="inline"value="Other" type="checkbox">Other</input></label>
+
+            <legend>Which Coding language is your favorite and why?</legend>
+                <textarea></textarea>
+            
+            <button id="submit" type="submit">Submit</button>
+        </fieldset>
+        
+        </form>
+    </body>
+</html>
+
