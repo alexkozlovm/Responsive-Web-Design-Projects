@@ -1,0 +1,47 @@
+
+#title {
+  text-align: center;
+  margin-bottom: -5px;
+  font-size: 40px;
+}
+#tribute-info {
+  text-align: center;
+  font-size: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+}
+#img-div {
+  justify-content: center;
+}
+#container {
+  padding: 0;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+#quote {
+  font-size: 25px;
+}
+figcaption {
+  text-align: center;
+  font-size: 22px;
+}
+p {
+  font-size: 17px;
+}
+h2 {
+  font-size: 24px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid black;
+}
+footer {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  text-align: center;
+}
