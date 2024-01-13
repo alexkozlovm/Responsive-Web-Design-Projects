@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Docs</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS colors</header>
+        <a class="nav-link" href="#intro">Intro</a>
+        <a class="nav-link" href="#color_names">Color Names</a>
+        <a class="nav-link" href="#HEX">HEX</a>
+        <a class="nav-link" href="#RGB">RGB</a>
+        <a class="nav-link" href="#HSL">HSL</a>
+        <a class="nav-link" href="#HSLA">HSLA</a>
+        <a class="nav-link" href="#RGBA">RGBA</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro">
+            <header>Intro</header>
+            <p>
+                We’ll cover all the available methods for specifying colors with CSS in this guide. There are six ways to declare CSS colors:
+            </p>
+            <ul>
+                <li>Color Names</li>
+                <li>HEX</li>
+                <li>RGB</li>
+                <li>HSL</li>
+                <li>RGBA</li>
+                <li>HSLA</li>
+            </ul>
+        </section>
+        
+        <section class="main-section" id="color_names">
+            <header>Color Names</header>
+            <p>
+                CSS has 16 basic color names. Examples of basic color names are blue, maroon, black and white. 
+            </p>
+            <code>
+                div { background-color: blue; }
+            </code>
+            <p>
+                The code above would result in a div having a blue background color. There are many other CSS color names/keywords you can find a complete list of <a href="https://www.w3.org/wiki/CSS/Properties/color/keywords">here</a>.
+            </p>
+        </section>
+        
+        <section class="main-section" id="HEX">
+            <header>HEX</header>
+            <p>
+                HEX, aka Hexadecimal color notation, is a way of declaring a color by indicating the amount of red, green, and blue (RGB) it has. This color notation is based on the hexadecimal numeral system (base 16). We’re more accustomed to the decimal numeral system (base 10), so hex is a bit tricky to understand at first.
+            </p>
+            <code>
+                div { background-color: #000000; }
+            </code>
+            <p>
+                In the example above, black was declared as #000000, which means it has no red, green, or blue. (Color theory tells us that the absence of any color is black.)
+            </p>
+        </section>
+        
+        <section class="main-section" id="RGB">
+            <header>RGB</header>
+            <p>
+                The decimal numeral system is what we’re most used to. It’s usually the system we’re taught in school, and it’s how most numbers are displayed in our world. The hexadecimal numeral system, on the other hand, isn’t mainstream; it isn’t used much outside computer programming and math-related fields.
+            </p>
+            <code>
+                div { background-color: rgb(0, 0, 0); }
+            </code>
+            <p>
+                The code above would result in a black box.
+            </p>
+        </section>
+        
+        <section class="main-section" id="HSL">
+            <header>HSL</header>
+            <p>
+                HSL stands for Hue, Saturation, and Lightness. The HSL color notation is an alternative to the RGB color notation. It was introduced to CSS with the idea that it’s more intuitive to learn compared to the RGB color system.
+            </p>
+            <code>
+                div { background-color: hsl(240, 100%, 50%); }
+            </code>
+            <p>
+                The code above would result in the div having a blue background color.
+            </p>
+        </section>
+        
+        <section class="main-section" id="HSLA">
+            <header>HSLA</header>
+            <p>
+                HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the color.
+            </p>
+            <code>
+                div {background-color:hsla(120,100%,50%,0.3);}
+            </code>
+            <p>
+                The code above would result in the div having a green background color with some opacity.
+            </p>
+        </section>
+        
+        <section class="main-section" id="RGBA">
+            <header>RGBA</header>
+            <p>
+                RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color.
+            </p>
+            <code>
+                div {background-color:rgba(255,0,0,0.3);}
+            </code>
+            <p>
+                The code above would result in the div having a red background color with some opacity.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
