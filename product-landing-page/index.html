@@ -1,32 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page for Iphone 15</title>
-</head>
-<body>
-  <header id="header">
-      <img id="header-img" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png" alt="Apple Logo">
-      <nav id="nav-bar">
-          <a class="nav-link" href="#hardware">Hardware</a>
-          <a class="nav-link" href="#software">Software</a>
-          <a class="nav-link" href="#pricing">Pricing</a>
-      </nav>
-    </header>
-    <main>
-        <section class="Hero">
-            <form id="form">
-                <label>Sign up to recive news about the Iphone 15</label>
-                <input type="email" id="email">
-            </form>
-            <video id="video" width="600" height="350" controls autoplay controlsList="nodownload" oncontextmenu="return false;">
-                <source src="./iphone15.mp4" type="video/mp4" />
-            </video>
-        </section>
-    </main>
-    <footer id="footer">
-
-    </footer>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Landing Page for Iphone 15</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <header id="header">
+        <img id="header-img" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c516.png" alt="Apple Logo">
+        
+        <nav id="nav-bar">
+            <ul>
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <section class="Hero">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <label>Sign up to recive news about the Iphone 15</label><br>
+                    <input type="email" id="email" placeholder="Enter your email address" name="email"><br>
+                    <input type="submit"  id="submit">
+                </form>
+                <video id="video"  controls autoplay controlsList="nodownload" oncontextmenu="return false;">
+                    <source src="./iphone15.mp4" type="video/mp4" />
+                </video>
+            </section>
+                <hr><div id="features">
+                    <div class="stat">
+                        <h2>A16 Bionic Chip</h2>
+                        <p>
+                            6‑core CPU with 2 performance and 4 efficiency cores,
+                            5‑core GPU, and
+                            16‑core Neural Engine.
+                        </p>
+                    </div>
+                    <div class="stat">
+                        <h2>Camera system</h2>
+                        <p>
+                            48MP Main Camera,
+                            12MP Ultra Wide Camera,
+                            12MP 2x Telephoto Camera.
+                        </p>
+                    </div>
+                
+                    <div class="stat">
+                        <h2>Contact Posters</h2>
+                        <p>
+                            Create a unique screen that other people see when you call them. When you make a phone call, your Contact Poster appears on the screen of the person you’re calling.
+                        </p>
+                    </div>
+                    <div class="stat">
+                        <h2> StandBy</h2>
+                        <p>
+                            Turn your iPhone on its side while charging to glance at important information from a distance. You can turn your iPhone into a bedside clock, view photos, control music, and more.
+                        </p>
+                    </div>
+                
+                </div>
+                    <div id="pricing">
+                    <table>
+                        <tr>
+                            <th>iPhone 15 </th>
+                            <th>iPhone 15 Plus </th>
+                            <th>iPhone 15 Pro </th>
+                            <th>iPhone 15 Pro Max </th>
+                        </tr>
+                        <tr>
+                            <td>$799+</td>
+                            <td>$899+</td>
+                            <td>$999+</td>
+                            <td>$1199+</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            
+        </main>
+        <footer id="footer">
+            <h3><a href="https://www.apple.com">Click here to visit the Apple website</a></h3>
+        </footer>
+    </body>
+    </html>
