@@ -8,19 +8,25 @@
   text-align: center;
   font-size: 20px;
 }
-
-#image {
-  max-width: 100%;
-  height: auto;
+img {
+  height: 85vh;
   display: block;
-
+  margin: auto;
+  padding: 10px;
 }
 #img-div {
-  justify-content: center;
+  margin: auto;
+}
+#timeline {
+  font-size: 1.2rem;
+}
+#timeline-header{
+  font-size: 2rem;
+  font-weight: bold;
 }
 #container {
   padding: 0;
-  margin: 5px;
+  margin: 5px
   text-align: center;
   font-weight: bold;
 }
@@ -35,7 +41,7 @@ p {
   font-size: 17px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
   padding-top: 10px;
   border-top: 1px solid black;
