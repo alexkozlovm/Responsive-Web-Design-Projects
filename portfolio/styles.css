@@ -1,3 +1,33 @@
+/* Define base theme variables */
+:root {
+  --primary-bg-color: #f4f4f4; /* Light background */
+  --text-color: #333; /* Dark text */
+  --header-bg-color: #005691; /* Header background */
+  --link-color: #fff; /* Link color */
+  --hover-link-color: #4CAF50; /* Hover state link */
+  --project-bg-color: #fff; /* Project background */
+  --footer-bg-color: #333; /* Footer background */
+  --button-bg-color: #4CAF50; /* Button background */
+  --button-text-color: #fff; /* Button text color */
+  --button-hover-bg-color: #45a049; /* Button hover state background */
+  --h3-color: #005691;
+}
+
+/* Dark theme overrides */
+.dark-theme {
+  --primary-bg-color: #333; /* Dark background */
+  --text-color: #f4f4f4; /* Light text */
+  --header-bg-color: #003d66; /* Darker header background */
+  --link-color: #ddd; /* Lighter link color */
+  --hover-link-color: #67C155; /* Different hover state link for dark mode */
+  --project-bg-color: #444; /* Darker project background */
+  --footer-bg-color: #222; /* Darker footer background */
+  --button-bg-color: #67C155; /* Different button background */
+  --button-text-color: #eee; /* Lighter button text color */
+  --button-hover-bg-color: #5aa144; /* Different button hover state background */
+  --h3-color: #0072bd; /* Lighter h2 color */
+}
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -8,69 +38,71 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
+  color: var(--text-color);
+  background-color: var(--primary-bg-color);
 }
 
 /* Header */
 header {
-  background: #005691;
-  color: #fff;
+  background: var(--header-bg-color);
+  color: var(--link-color);
   padding-bottom: 10px;
 }
 
 nav {
   display: flex;
-  justify-content: left; /* Adjusted to flex-end to remove redundancy */
+  justify-content: space-between;
   padding: 10px;
-  border-bottom: 1px solid #fff; /* Preserved border style */
+  border-bottom: 1px solid var(--link-color);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* Centered navigation items */
+  justify-content: center;
   padding: 10px 0;
+  align-items: center;
+  font-size: 1.2rem;
 }
 
 nav ul li {
-  margin-left: 20px; /* Adjusted for consistent spacing */
+  margin-left: 20px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: #4CAF50; /* Example hover color */
+  color: var(--hover-link-color);
 }
 
 #hero {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
   height: 100vh;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--link-color);
   text-align: center;
   padding: 0 20px;
-  margin-bottom: -10px;  
+  margin-bottom: -10px;
 }
 
+/* Adjusted hero headings for simplicity */
 #hero h1, #hero h4 {
   text-align: center;
   margin: 20px 0;
-  font-size: 4rem;
-  color: #fff;
+  font-size: 4rem; /* Simplified for both */
+  color: var(--link-color); /* Using link color variable for consistency */
   padding: 10px;
 }
 #hero h4 {
-  margin-top: 0px;
   font-size: 3.5rem;
-  color: #4CAF50;
+  color: var(--hover-link-color); /* Using hover link color for a bit of variation */
 }
 
 /* Projects */
@@ -82,7 +114,7 @@ nav ul li a:hover {
 }
 
 .project {
-  background: #fff;
+  background: var(--project-bg-color);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 10px;
   width: 20%;
@@ -94,24 +126,24 @@ nav ul li a:hover {
 }
 
 .project h3 {
-  color: #005691;
+  color: var(--h3-color); /* Using header background color for consistency */
 }
 
 .project p, .details p {
-  color: #666;
+  color: var(--text-color);
   padding: 10px;
 }
 
 .project img {
   width: 400px;
   height: 200px;
-  border: 1px solid #005691; 
+  border: 1px solid var(--header-bg-color); 
 }
 
 /* Footer */
 footer {
-  background: #333;
-  color: #fff;
+  background: var(--footer-bg-color);
+  color: var(--link-color);
   text-align: center;
   padding: 5px;
   bottom: 0;
@@ -120,12 +152,12 @@ footer {
 
 .details {
   font-size: 1.2rem;
-  background: #fff;
+  background: var(--project-bg-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
-  display: inline-flex; /* Adjusted for consistent display */
+  display: inline-flex;
   flex-direction: column;
   width: calc(33.333% - 40px);
 }
@@ -134,4 +166,29 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#theme-toggle {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: var(--button-hover-bg-color);
+}
+a {
+  text-decoration: none;
 }
