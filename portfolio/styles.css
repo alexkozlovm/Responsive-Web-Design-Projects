@@ -18,27 +18,35 @@ header {
   color: #fff;
   padding-bottom: 10px;
 }
+
 nav {
-  border-bottom: 1px solid #fff;
-}
-header nav ul {
-  list-style: none;
-  text-align: center;
-  padding: 10px 0;
   display: flex;
-  justify-content: right;
+  justify-content: left; /* Adjusted to flex-end to remove redundancy */
+  padding: 10px;
+  border-bottom: 1px solid #fff; /* Preserved border style */
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 15px;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centered navigation items */
+  padding: 10px 0;
 }
 
-header nav ul li a {
+nav ul li {
+  margin-left: 20px; /* Adjusted for consistent spacing */
+}
+
+nav ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
+
+nav ul li a:hover {
+  color: #4CAF50; /* Example hover color */
+}
+
 #hero {
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
   height: 100vh;
@@ -52,32 +60,17 @@ header nav ul li a {
   margin-bottom: -10px;  
 }
 
-#hero h1 {
+#hero h1, #hero h4 {
   text-align: center;
   margin: 20px 0;
-  font-size: 2rem;
+  font-size: 4rem;
+  color: #fff;
+  padding: 10px;
 }
-
 #hero h4 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 2rem;
-}
-
-/* Main Content */
-
-h2 {
-  background: #333;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-p {
-  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 3.5rem;
+  color: #4CAF50;
 }
 
 /* Projects */
@@ -85,16 +78,13 @@ p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 20px 0;
   gap: 10px;
-  margin-bottom: 20px;
 }
+
 .project {
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 10px;
-  margin-bottom: 20px;
-  display: flex;
   width: 20%;
   flex-direction: column;
   height: 350px;
@@ -107,8 +97,9 @@ p {
   color: #005691;
 }
 
-.project p {
+.project p, .details p {
   color: #666;
+  padding: 10px;
 }
 
 .project img {
@@ -116,8 +107,6 @@ p {
   height: 200px;
   border: 1px solid #005691; 
 }
-
-/* Social Media */
 
 /* Footer */
 footer {
@@ -127,4 +116,22 @@ footer {
   padding: 5px;
   bottom: 0;
   width: 100%;
+}
+
+.details {
+  font-size: 1.2rem;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-flex; /* Adjusted for consistent display */
+  flex-direction: column;
+  width: calc(33.333% - 40px);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
