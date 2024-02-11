@@ -208,4 +208,10 @@ a {
   footer {
     margin-top: 7.5%;
   }
+  .details {
+    width: 95%;
+  }
+  .details > h2 {
+    text-align: center;
+  }
 }
