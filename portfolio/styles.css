@@ -110,16 +110,17 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1.5%;
+  padding: 2%;
 }
 
 .project {
   background: var(--project-bg-color);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding: 10px;
+  padding: 2%;
   width: 20%;
   flex-direction: column;
-  height: 350px;
+  height: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -135,8 +136,9 @@ nav ul li a:hover {
 }
 
 .project img {
-  width: 400px;
-  height: 200px;
+  aspect-ratio: 2 / 1;
+  max-height: 60%;
+  max-width: 100%;
   border: 1px solid var(--header-bg-color); 
 }
 
@@ -145,9 +147,6 @@ footer {
   background: var(--footer-bg-color);
   color: var(--link-color);
   text-align: center;
-  padding: 5px;
-  bottom: 0;
-  width: 100%;
 }
 
 .details {
@@ -191,4 +190,28 @@ main {
 }
 a {
   text-decoration: none;
+}
+@media (max-width: 1750px) {
+  .project {
+    width: 29%;
+    height: 35%;
+  }
+  footer {
+    margin-top: 6%;
+  }
+}
+@media (max-width: 1300px) {
+  .project {
+    width: 40%;
+    height: 25%;
+  }
+  footer {
+    margin-top: 7.5%;
+  }
+  .details {
+    width: 95%;
+  }
+  .details > h2 {
+    text-align: center;
+  }
 }
