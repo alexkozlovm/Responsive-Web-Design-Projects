@@ -110,7 +110,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1.5%;
   padding: 2%;
 }
 
@@ -147,9 +147,6 @@ footer {
   background: var(--footer-bg-color);
   color: var(--link-color);
   text-align: center;
-  padding: 5px;
-  bottom: 0;
-  width: 100%;
 }
 
 .details {
@@ -199,10 +196,16 @@ a {
     width: 29%;
     height: 35%;
   }
+  footer {
+    margin-top: 6%;
+  }
 }
 @media (max-width: 1300px) {
   .project {
     width: 40%;
     height: 25%;
+  }
+  footer {
+    margin-top: 7.5%;
   }
 }
