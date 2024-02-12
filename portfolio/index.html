@@ -14,9 +14,13 @@
           <li><a href="#basic-info" target="_blank">Details</a></li>
           <li><a href="#projects" target="_blank">Projects</a></li>
         </ul>
-        <div class="theme-toggle-wrapper">
-          <button id="theme-toggle">Toggle Theme</button>
+          <!-- Theme switch UI component -->
+      <label class="ui-switch">
+        <input type="checkbox">
+        <div class="slider">
+          <div class="circle"></div>
         </div>
+      </label>
       </nav>      
       <section id="hero">
         <h1>Hey, I am Alex Kozlov</h1>
@@ -24,6 +28,15 @@
       </section>
     </header>
     <main>
+      <h2 style="
+      font-size: 2rem;
+      padding: 0.5rem;
+      margin: 1rem;
+      background-color: var(--project-bg-color);
+      color: var(text-color);
+      width: 100vw;
+      text-align: center;
+      ">Overview</h2>
       <section class="details" id="basic-info">
         <h2>About Me</h2>
         <p>
@@ -55,8 +68,8 @@
       font-size: 2rem;
       padding: 0.5rem;
       margin: 1rem;
-      background-color: #333;
-      color: #fff;
+      background-color: var(--project-bg-color);
+      color: var(text-color);
       width: 100vw;
       text-align: center;
       ">Projects</h2>

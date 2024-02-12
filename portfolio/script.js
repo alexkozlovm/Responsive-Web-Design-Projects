@@ -6,10 +6,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+const body = document.querySelector("body");
+const sliderCircle = document.querySelector(".slider .circle ");
+const slider = document.querySelector("input[type='checkbox']");
 
-const themeToggleButton = document.getElementById('theme-toggle');
+slider.addEventListener('change', choseTheme)
 
-themeToggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-theme');
-    
-});
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+if (systemSettingDark.matches) darkTheme();
+
+/* Theme switch functions */
+function choseTheme() {
+    if (slider.checked) {
+        darkTheme();
+    } else {
+        lightTheme();
+    }
+}
+function lightTheme() { 
+        slider.checked = false;
+        document.body.classList.remove("dark");
+}
+function darkTheme() {
+        slider.checked = true;
+        document.body.classList.add("dark");
+}
