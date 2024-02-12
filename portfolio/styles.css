@@ -21,7 +21,7 @@
   --link-color: #ddd; /* Lighter link color */
   --hover-link-color: #67C155; /* Different hover state link for dark mode */
   --project-bg-color: #444; /* Darker project background */
-  --footer-bg-color: #222; /* Darker footer background */
+  --footer-bg-color: #444; /* Darker footer background */
   --button-bg-color: #67C155; /* Different button background */
   --button-text-color: #eee; /* Lighter button text color */
   --button-hover-bg-color: #5aa144; /* Different button hover state background */
@@ -110,7 +110,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 1.5%;
+  gap: 2%;
   padding: 2%;
 }
 
@@ -124,6 +124,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 -10px;
 }
 
 .project h3 {
